@@ -42,10 +42,11 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="ExcelWebAddIn1Manifest\SharePointProjectItem.spdata">
+    <Content Include="ExcelWebAddInManifest\requirements.txt" />
+    <None Include="ExcelWebAddInManifest\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e81da6aa-88e0-41a6-b238-1a50b4b05bb0}</SharePointProjectItemId>
     </None>
-    <Content Include="ExcelWebAddIn1Manifest\ExcelWebAddIn1.xml">
+    <Content Include="ExcelWebAddInManifest\ExcelWebAddIn.xml">
       <OpcRelationship>manifest-oemanifest</OpcRelationship>
       <SubType>Designer</SubType>
     </Content>
