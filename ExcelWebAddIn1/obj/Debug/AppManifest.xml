@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="ExcelWebAddIn1"
-     ProductID="{182498b5-2e47-418e-b4c7-7ebaa9dc8fd0}"
+     ProductID="{c49324ed-42d1-4c76-bd34-9e66f31d705c}"
      Version="1.0.0.0"
      SharePointMinVersion="15.0.0.0"
 >

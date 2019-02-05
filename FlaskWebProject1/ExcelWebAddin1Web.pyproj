@@ -38,12 +38,20 @@
     <Folder Include="FlaskWebProject1\static\" />
     <Folder Include="FlaskWebProject1\static\content\" />
     <Folder Include="FlaskWebProject1\static\fonts\" />
+    <Folder Include="FlaskWebProject1\static\images\" />
     <Folder Include="FlaskWebProject1\static\scripts\" />
+    <Folder Include="FlaskWebProject1\static\scripts\fabricui\" />
     <Folder Include="FlaskWebProject1\templates\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FlaskWebProject1\static\content\home.css" />
-    <Content Include="FlaskWebProject1\static\scripts\home.js" />
+    <Content Include="FlaskWebProject1\static\content\addin.css" />
+    <Content Include="FlaskWebProject1\static\images\AddinIcon.png" />
+    <Content Include="FlaskWebProject1\static\images\Button16x16.png" />
+    <Content Include="FlaskWebProject1\static\images\Button32x32.png" />
+    <Content Include="FlaskWebProject1\static\images\Button80x80.png" />
+    <Content Include="FlaskWebProject1\static\images\Close.png" />
+    <Content Include="FlaskWebProject1\static\scripts\addin.js" />
+    <Content Include="FlaskWebProject1\static\scripts\fabricui\MessageBanner.js" />
     <Content Include="FlaskWebProject1\templates\addin.html" />
     <Content Include="FlaskWebProject1\templates\home.html" />
     <Content Include="requirements.txt" />
