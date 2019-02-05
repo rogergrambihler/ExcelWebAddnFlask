@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelWebAddIn1", "ExcelWebAddIn1\ExcelWebAddIn1.csproj", "{1133A865-3A45-46BD-940F-9A893E5524E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelWebAddIn1", "manifest\ExcelWebAddIn1.csproj", "{1133A865-3A45-46BD-940F-9A893E5524E9}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ExcelWebAddin1Web", "FlaskWebProject1\ExcelWebAddin1Web.pyproj", "{031B5F4E-2674-404A-892E-47D65046C1B8}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ExcelWebAddin1Web", "wwwroot\ExcelWebAddin1Web.pyproj", "{031B5F4E-2674-404A-892E-47D65046C1B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
