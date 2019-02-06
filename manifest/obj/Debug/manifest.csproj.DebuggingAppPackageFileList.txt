@@ -1,2 +1,0 @@
-bin\Debug\OfficeAppManifests\ExcelWebAddInFlaskManifest.xml
-C:\Users\rogerg.REDMOND\source\repos\ExcelWebAddnFlask\manifest\bin\Debug\manifest.debugapp
