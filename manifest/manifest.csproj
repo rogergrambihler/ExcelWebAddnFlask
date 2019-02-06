@@ -6,8 +6,8 @@
     <ProjectGuid>{1133A865-3A45-46BD-940F-9A893E5524E9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExcelWebAddIn1</RootNamespace>
-    <AssemblyName>ExcelWebAddIn1</AssemblyName>
+    <RootNamespace>ExcelWebAddInFlask</RootNamespace>
+    <AssemblyName>ExcelWebAddInFlask</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetOfficeVersion>15.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
@@ -42,11 +42,10 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="ExcelWebAddInManifest\requirements.txt" />
-    <None Include="ExcelWebAddInManifest\SharePointProjectItem.spdata">
+    <None Include="ExcelWebAddInFlaskManifest\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{e81da6aa-88e0-41a6-b238-1a50b4b05bb0}</SharePointProjectItemId>
     </None>
-    <Content Include="ExcelWebAddInManifest\ExcelWebAddIn.xml">
+    <Content Include="ExcelWebAddInFlaskManifest\ExcelWebAddInFlask.xml">
       <OpcRelationship>manifest-oemanifest</OpcRelationship>
       <SubType>Designer</SubType>
     </Content>

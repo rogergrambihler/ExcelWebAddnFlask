@@ -1,7 +1,0 @@
-False
-77295ffc-ed89-4319-87f7-b7fcd96e72650365cfb5-70e1-4dff-af82-d1ab3d9a43f6
-{55b611eb-c248-4df1-8b4a-6288fba04745}{15deeb08-8225-456d-ae95-9e6bd31d176b}
-{87ea30b2-703b-486c-a05a-a1475e19dbfe}
-1.0.0.0
-ExcelWebAddIn1
-_layouts/15/

@@ -1,11 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Published:70EDFC97-B41D-43C5-B751-7C00AD999804-->
 <!--Created:ce44715c-8c4e-446b-879c-ea9ebe0f09c8-->
-<OfficeApp 
-          xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-          xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" 
-          xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
-          xsi:type="TaskPaneApp">
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
 
   <!-- Begin Basic Settings: Add-in metadata, used for all versions of Office unless override provided. -->
 
@@ -18,7 +14,7 @@
   <DefaultLocale>en-US</DefaultLocale>
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
   <DisplayName DefaultValue="ExcelWebAddInFlask" />
-  <Description DefaultValue="ExcelWebAddInFlask"/>
+  <Description DefaultValue="ExcelWebAddInFlask" />
   <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
   <IconUrl DefaultValue="https://localhost:50603/static/images/Button32x32.png" />
 
@@ -56,13 +52,13 @@
           <!--"This code enables a customizable message to be displayed when the add-in is loaded successfully upon individual install."-->
           <GetStarted>
             <!-- Title of the Getting Started callout. The resid attribute points to a ShortString resource -->
-            <Title resid="Contoso.GetStarted.Title"/>
+            <Title resid="Contoso.GetStarted.Title" />
 
             <!-- Description of the Getting Started callout. resid points to a LongString resource -->
-            <Description resid="Contoso.GetStarted.Description"/>
+            <Description resid="Contoso.GetStarted.Description" />
 
             <!-- Points to a URL resource which details how the add-in should be used. -->
-            <LearnMoreUrl resid="Contoso.GetStarted.LearnMoreUrl"/>
+            <LearnMoreUrl resid="Contoso.GetStarted.LearnMoreUrl" />
           </GetStarted>
           <!-- Function file is a HTML page that includes the JavaScript where functions for ExecuteAction will be called. 
             Think of the FunctionFile as the code behind ExecuteFunction. -->
@@ -106,6 +102,27 @@
                     <SourceLocation resid="Contoso.Taskpane.Url" />
                   </Action>
                 </Control>
+
+                <!-- Control. It can be of type "Button" or "Menu". -->
+                <Control xsi:type="Button" id="Contoso.FunctionButton">
+                  <Label resid="Contoso.FunctionButton.Label" />
+                  <Supertip>
+                    <!-- ToolTip title. resid must point to a ShortString resource. -->
+                    <Title resid="Contoso.FunctionButton.Label" />
+                    <!-- ToolTip description. resid must point to a LongString resource. -->
+                    <Description resid="Contoso.FunctionButton.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Contoso.funcicon_16x16" />
+                    <bt:Image size="32" resid="Contoso.funcicon_32x32" />
+                    <bt:Image size="80" resid="Contoso.funcicon_80x80" />
+                  </Icon>
+
+                  <!-- This is what happens when the command is triggered (E.g. click on the Ribbon). Supported actions are ExecuteFunction or ShowTaskpane. -->
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>doSomethingAndShowDialog</FunctionName>
+                  </Action>
+                </Control>
               </Group>
             </OfficeTab>
           </ExtensionPoint>
@@ -121,19 +138,21 @@
         <bt:Image id="Contoso.tpicon_80x80" DefaultValue="https://localhost:50603/static/images/Button80x80.png" />
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Contoso.DesktopFunctionFile.Url" DefaultValue="https://localhost:50603/Functions/FunctionFile.html" />
+        <bt:Url id="Contoso.DesktopFunctionFile.Url" DefaultValue="https://localhost:50603/functions.html" />
         <bt:Url id="Contoso.Taskpane.Url" DefaultValue="https://localhost:50603/addin.html" />
         <bt:Url id="Contoso.GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
       </bt:Urls>
       <!-- ShortStrings max characters==125. -->
       <bt:ShortStrings>
         <bt:String id="Contoso.TaskpaneButton.Label" DefaultValue="Show Taskpane" />
+        <bt:String id="Contoso.FunctionButton.Label" DefaultValue="Dialog from Function" />
         <bt:String id="Contoso.Group1Label" DefaultValue="Commands Group" />
         <bt:String id="Contoso.GetStarted.Title" DefaultValue="Get started with your sample add-in!" />
       </bt:ShortStrings>
       <!-- LongStrings max characters==250. -->
       <bt:LongStrings>
         <bt:String id="Contoso.TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane" />
+        <bt:String id="Contoso.FunctionButton.Tooltip" DefaultValue="Click to Execute a Function" />
         <bt:String id="Contoso.GetStarted.Description" DefaultValue="Your sample add-in loaded succesfully. Go to the HOME tab and click the 'Show Taskpane' button to get started." />
       </bt:LongStrings>
     </Resources>

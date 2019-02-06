@@ -51,8 +51,17 @@
     <Content Include="website\static\images\Button80x80.png" />
     <Content Include="website\static\images\Close.png" />
     <Content Include="website\static\scripts\addin.js" />
+    <Content Include="website\static\scripts\dialoghelper.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="website\static\scripts\fabricui\MessageBanner.js" />
     <Content Include="website\templates\addin.html" />
+    <Content Include="website\templates\dialog.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="website\templates\functions.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="website\templates\home.html" />
     <Content Include="requirements.txt" />
     <Content Include="website\static\content\bootstrap.css" />

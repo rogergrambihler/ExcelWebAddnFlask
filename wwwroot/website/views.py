@@ -25,6 +25,23 @@ def addin():
         year=datetime.now().year,
     )
 
+@app.route('/functions.html')
+def functions():
+    """Renders the home page."""
+    return render_template(
+        'functions.html',
+        title='functions page',
+        year=datetime.now().year,
+    )
+
+@app.route('/dialog.html')
+def dialog():
+    """Renders the home page."""
+    return render_template(
+        'dialog.html',
+        title='functions page',
+        year=datetime.now().year,
+    )
 
 @app.route('/contact')
 def contact():
