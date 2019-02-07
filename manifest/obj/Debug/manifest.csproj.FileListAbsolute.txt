@@ -1,1 +1,0 @@
-C:\Users\rogerg.REDMOND\source\repos\ExcelWebAddnFlask\manifest\obj\Debug\manifest.csproj.CoreCompileInputs.cache

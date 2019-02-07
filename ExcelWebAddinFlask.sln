@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "manifest", "manifest\manifest.csproj", "{1133A865-3A45-46BD-940F-9A893E5524E9}"
-EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "wwwroot", "wwwroot\wwwroot.pyproj", "{031B5F4E-2674-404A-892E-47D65046C1B8}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ExcelWebAddinFlask", "ExcelWebAddinFlask.pyproj", "{031B5F4E-2674-404A-892E-47D65046C1B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,12 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1133A865-3A45-46BD-940F-9A893E5524E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1133A865-3A45-46BD-940F-9A893E5524E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1133A865-3A45-46BD-940F-9A893E5524E9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{1133A865-3A45-46BD-940F-9A893E5524E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1133A865-3A45-46BD-940F-9A893E5524E9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1133A865-3A45-46BD-940F-9A893E5524E9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{031B5F4E-2674-404A-892E-47D65046C1B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{031B5F4E-2674-404A-892E-47D65046C1B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{031B5F4E-2674-404A-892E-47D65046C1B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
