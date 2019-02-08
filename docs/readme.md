@@ -3,7 +3,7 @@
 
 ##Welcome
 
-![](images/black.bmp?raw=true)
+![](images/black.gif)
 
 ExcelWebAddinFlask is a sample project showing of an Office Excel WebAddin that uses a python flask server.
 The project is a combination of the ExcelWebAddin template and the Python web server template from Visual Studio.
