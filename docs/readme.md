@@ -1,6 +1,7 @@
 
 #ExcelWebAddinFlask
 
+
 ##Welcome
 
 ![](images/black.gif  =100x)
@@ -8,7 +9,35 @@
 ExcelWebAddinFlask is a sample project showing of an Office Excel WebAddin that uses a python flask server.
 The project is a combination of the ExcelWebAddin template and the Python web server template from Visual Studio.
 
+##Goals 
+
+
+
+todo: add some text why someone would want to develop and Office Addin.
+todo: figure out what to do about FabricUI. 
+todo: want a general website for help and contact information. I'm using the Visual studio webserver template. Is there a better general template that is used by python folks?
+
+##Lessons
+
+Install Prerequisites for webSite
+Run the WebSite
+Setup SSL Certificate
+The Addin Manifest Manifest
+Sideloading Addin in Excel
+Addin items in the Excel Ribbon
+Show a Task pane in Excel
+Show a Dialog in Excel
+Running your webSite to Azure
+Update Addin Manifest to use Azure
+Publish your addin ot the Office store
+Fame and Glory
+
 ##PreRequisites
+
+Why Flask
+Why JQuery
+todo: Is there an easy way to read markdown?
+
 
 To use the Project you will need the following installed:  
 Visual Studio Community (Include Python and Office Shared Development)  
