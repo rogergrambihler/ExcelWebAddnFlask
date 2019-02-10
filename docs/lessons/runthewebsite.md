@@ -1,4 +1,6 @@
 
+todo: best way to setup so user can make own alterations? Probably want to do a fork
+
 ##Install the project
 
  (todo: is this a good generic webSite template?)  
