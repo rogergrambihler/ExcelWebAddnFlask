@@ -80,7 +80,7 @@ def about():
     """Renders the about page."""
     return render_template(
         'about.html',
-        title='About ' + request.host_url,
+        title='About ' + request.host_url + " " + request.url_root ,
         year=datetime.now().year,
         message='Your application description page.'
     )
