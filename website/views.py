@@ -75,12 +75,18 @@ def contact():
         message='Your contact page.'
     )
 
+
 @app.route('/about')
 def about():
     """Renders the about page."""
+
+    foo = ""
+    for attr in dir(request):
+        foo += str(attr) + ":" + str(getattr(request, attr))
+
     return render_template(
         'about.html',
-        title='About ' + request.host_url + " " + request.url_root ,
+        title='About ' + request.host_url + " " + foo ,
         year=datetime.now().year,
         message='Your application description page.'
     )
