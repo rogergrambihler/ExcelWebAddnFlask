@@ -19,18 +19,23 @@ This tutorial is broken up into Lessons. Feel free to skip and move around based
 [Run the WebSite](lessons/runthewebsite.md)  
 [Setup SSL Certificate for localhost](lessons/setupsslcertificateforlocalhost.md)  
 [The Addin Manifest](lessons/theaddinmanifest.md)  
-[Sideloading an Addin into Excel Online](lessons/sidloadinganaddintoexcelonline.md)   
+[Sideloading an Addin into Excel Online](lessons/sideloadinganaddintoexcelonline.md)   
 [Show a Hello World Task pane](lessons/showahelloworldtaskpane.md)  
 [Excel JavaScript API](lessons/exceljavascriptapi.md)  
 [Use the Excel Api in a Task Pane](lessons/usetheexcelapiinataskpane.md)  
 [Functions](lessons/functions.md)  
 [Show a Dialog](lessons/showadialog.md)  
 [Running your webSite on Azure](lessons/runningyourwebsiteonazure.md)  
-[Publish your addin to the Office store](lessons/publishyouraddintotheofficestore.md)    
+[Submit your addin to the Office store](lessons/submityouraddintotheofficestore.md)    
 [Fame and Glory](lessons/fameandglory.md)  
 
 ## Bonus Material 
 WebSite Monitoring  
 Go Geo (Load Balancers)  
 Content Delivery Networks (CDNs)  
-Fabric UI  
+Fabric UI
+Localization  
+
+## Misc  
+Excel Worksheet Permissions
+
