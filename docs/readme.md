@@ -18,18 +18,16 @@ This tutorial is broken up into Lessons. Feel free to skip and move around based
 [Install Prerequisites](lessons/installprerequisites.md)    
 [Run the WebSite](lessons/runthewebsite.md)  
 [Setup SSL Certificate for localhost](lessons/setupsslcertificateforlocalhost.md)  
-The Addin Manifest  
-Sideloading Addin into Excel Online  
-Addin items in the Excel Ribbon  
-Show a Hello World Task pane in Excel  
-Excel API. Excel.Run  
-Show Task Pane (do something with Excel.Run)  
-Functions.html  
-Show a Dialog in Excel  
-Running your webSite on Azure  
-Update Addin Manifest to use Azure  
-Publish your addin to the Office store  
-Fame and Glory  
+[The Addin Manifest](lessons/theaddinmanifest.md)  
+[Sideloading an Addin into Excel Online](lessons/sidloadinganaddinintoexcelonline.md)   
+[Show a Hello World Task pane](lessons/showahelloworldtaskpane.md)  
+[Excel JavaScript API](lessons/exceljavascriptapi.md)  
+[Use the Excel Api in a Task Pane](lessons/usetheexcelapiinataskpane.md)  
+[Functions](lessons/functions.md)  
+[Show a Dialog](lessons/showadialog.md)  
+[Running your webSite on Azure](lessons/runningyourwebsiteonazure.md)  
+[Publish your addin to the Office store](lessons/publishyouraddintotheofficestore.md)    
+[Fame and Glory](lessons/fameandglory.md)  
 
 ## Bonus Material 
 WebSite Monitoring  
