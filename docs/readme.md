@@ -1,46 +1,49 @@
 
-#ExcelWebAddinFlask  
+# ExcelWebAddinFlask  
+
+## Welcome
+
+![altText](images/black.gif)
 
 
-##Welcome
-
-![](images/black.gif  =100x)
+<img src="https://github.com/rogergrambihler/ExcelWebAddnFlask/blob/master/docs/images/black.gif" width="200">
 
 ExcelWebAddinFlask is a sample project showing of an Office Excel WebAddin that uses a python flask server.
 The project is a combination of the ExcelWebAddin template and the Python web server template from Visual Studio.
 
-##Goals 
+## Goals 
 
 todo: add some text why someone would want to develop and Office Addin.
 todo: figure out what to do about FabricUI. 
 todo: want a general website for help and contact information. I'm using the Visual studio webserver template. Is there a better general template that is used by python folks?
 
-##Lessons
+## Lessons
 
-What is an Office Add-in
-Install Prerequisites for webSite
-Run the WebSite
-Setup SSL Certificate
-The Addin Manifest Manifest
-Sideloading Addin in Excel
-Addin items in the Excel Ribbon
-Show a Hello World Task pane in Excel
-Excel API. Excel.Run
-Show Task Pane (do something with Excel.Run)
-Functions.html
-Show a Dialog in Excel
-Running your webSite on Azure
-Update Addin Manifest to use Azure
-Publish your addin to the Office store
-Fame and Glory
+What is an Office Add-in  
+Install Prerequisites for webSite  
+Run the WebSite  
+Setup SSL Certificate  
+The Addin Manifest Manifest  
+Sideloading Addin in Excel  
+Addin items in the Excel Ribbon  
+Show a Hello World Task pane in Excel  
+Excel API. Excel.Run  
+Show Task Pane (do something with Excel.Run)  
+Functions.html  
+Show a Dialog in Excel  
+Running your webSite on Azure  
+Update Addin Manifest to use Azure  
+Publish your addin to the Office store  
+Fame and Glory  
 
-##Bonus Material 
-WebSite Monitoring
-Go Geo (Load Balancers)
-Content Delivery Networks (CDNs)
+## Bonus Material 
+WebSite Monitoring  
+Go Geo (Load Balancers)  
+Content Delivery Networks (CDNs)  
+Fabric UI  
 
 
-##PreRequisites
+## PreRequisites
 
 Why Flask
 Why JQuery
@@ -76,7 +79,7 @@ The select cell in the Excel Spreadsheet will turn orange
 
 To learn more about how the Excel Object model works find the code for changing the color and make change the code for your own favorite background.
 
-##FAQ
+## FAQ
 
 Where can I learn more about Excel Addins? https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-overview  
   
