@@ -29,7 +29,7 @@ def manifestXml():
     # todo: possible browsed to this page as http:// instead of https://
     # in which case if using non-standard ports this can be wrong. 
 
-    host_url = "https://" + request.host
+    host_url = "https://" + request.host + "/"
     responseXml = render_template(
         'manifests/manifest.xml',
         host_url=host_url
