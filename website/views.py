@@ -32,7 +32,7 @@ def manifestXml():
     host_url = "https://" + request.host
     responseXml = render_template(
         'manifests/manifest.xml',
-        host_url=request.host_url
+        host_url=host_url
     )
 
     response = make_response(responseXml)
