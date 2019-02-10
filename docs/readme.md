@@ -1,5 +1,5 @@
 
-#ExcelWebAddinFlask
+#ExcelWebAddinFlask  
 
 
 ##Welcome
@@ -11,33 +11,40 @@ The project is a combination of the ExcelWebAddin template and the Python web se
 
 ##Goals 
 
-
-
 todo: add some text why someone would want to develop and Office Addin.
 todo: figure out what to do about FabricUI. 
 todo: want a general website for help and contact information. I'm using the Visual studio webserver template. Is there a better general template that is used by python folks?
 
 ##Lessons
 
+What is an Office Add-in
 Install Prerequisites for webSite
 Run the WebSite
 Setup SSL Certificate
 The Addin Manifest Manifest
 Sideloading Addin in Excel
 Addin items in the Excel Ribbon
-Show a Task pane in Excel
+Show a Hello World Task pane in Excel
+Excel API. Excel.Run
+Show Task Pane (do something with Excel.Run)
+Functions.html
 Show a Dialog in Excel
-Running your webSite to Azure
+Running your webSite on Azure
 Update Addin Manifest to use Azure
-Publish your addin ot the Office store
+Publish your addin to the Office store
 Fame and Glory
+
+##Bonus Material 
+WebSite Monitoring
+Go Geo (Load Balancers)
+Content Delivery Networks (CDNs)
+
 
 ##PreRequisites
 
 Why Flask
 Why JQuery
 todo: Is there an easy way to read markdown?
-
 
 To use the Project you will need the following installed:  
 Visual Studio Community (Include Python and Office Shared Development)  
@@ -61,7 +68,7 @@ Launches the python webservice (you should see the home page displayed correctly
 Opens an Excel document with the manifest (you should see in excel a "Show TaskPane button"  
 Click the "Show Taskpane Button". This will open your Office Addin's custom taskpane.
 
-##Changing the Background
+##Changing the Background  
 
 With the taskpane open highlight a cell in the Excel Spreadsheet  
 Click the "Highlight" button in the taskpane  
