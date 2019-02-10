@@ -3,7 +3,7 @@ Routes and views for the flask application.
 """
 
 from datetime import datetime
-from flask import render_template
+from flask import render_template, make_response, request
 from website import app
 
 @app.route('/')
@@ -15,6 +15,28 @@ def home():
         title='Home Page',
         year=datetime.now().year,
     )
+
+
+## todo: app route for generating the manifest.xml
+# is there better way to do the approutes vs. all one file?
+@app.route('/manifest.xml')
+def manifestXml():
+
+    responseXml = render_template(
+        'manifests/manifest.xml',
+        host_url=request.host_url
+    )
+
+    response = make_response(responseXml)
+    response.headers["Cache-Control"] = "must-revalidate"
+    response.headers["Pragma"] = "must-revalidate"
+    response.headers["Content-type"] = "application/xml"
+
+    # Add the Content-Disposition which will tell the browser to download as a file 
+    # instead of showing in the browser
+    response.headers["Content-Disposition"] =  "attachment; filename='manifest.xml'"
+    return response
+
 
 @app.route('/addin.html')
 def addin():
