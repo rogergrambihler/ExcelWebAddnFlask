@@ -1,4 +1,11 @@
 
+todo: probably want to rename or break this up better 
+
+Use Github's Import Repository option on the + menu on top of the page
+change to see how forking works
+
+This creates a new repository with the exact contents of the copied repository. The downside is that it doesn't count as a fork for Github.
+
 todo: best way to setup so user can make own alterations? Probably want to do a fork
 
 ##Install the project
