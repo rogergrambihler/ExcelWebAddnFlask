@@ -14,11 +14,11 @@ This tutorial is broken up into Lessons. Feel free to skip and move around based
 
 ## Lessons
 
-What is an Office Add-in  
-Install Prerequisites  
-Run the WebSite  (todo: is this a good generic webSite template?)  
-Setup SSL Certificate for localhost  
-The Addin Manifest Manifest  
+[What is an Office Add-in](lessons/whatisanofficeaddin.md)  
+[Install Prerequisites](lessons/installprerequisites.md)    
+[Run the WebSite](lessons/runthewebsite.md)  
+[Setup SSL Certificate for localhost](lessons/setupsslcertificateforlocalhost.md)  
+The Addin Manifest  
 Sideloading Addin into Excel Online  
 Addin items in the Excel Ribbon  
 Show a Hello World Task pane in Excel  
