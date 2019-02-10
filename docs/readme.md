@@ -19,7 +19,7 @@ This tutorial is broken up into Lessons. Feel free to skip and move around based
 [Run the WebSite](lessons/runthewebsite.md)  
 [Setup SSL Certificate for localhost](lessons/setupsslcertificateforlocalhost.md)  
 [The Addin Manifest](lessons/theaddinmanifest.md)  
-[Sideloading an Addin into Excel Online](lessons/sidloadinganaddinintoexcelonline.md)   
+[Sideloading an Addin into Excel Online](lessons/sidloadinganaddintoexcelonline.md)   
 [Show a Hello World Task pane](lessons/showahelloworldtaskpane.md)  
 [Excel JavaScript API](lessons/exceljavascriptapi.md)  
 [Use the Excel Api in a Task Pane](lessons/usetheexcelapiinataskpane.md)  
