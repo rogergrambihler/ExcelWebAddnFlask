@@ -1,4 +1,6 @@
 
+todo
+
 ##Trust the Certificate
 Office addins require a trusted SSL so you need to do some extra steps to install the wwwroot\certs\ca.crt as a trusted root authority.  
 
