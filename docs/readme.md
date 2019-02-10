@@ -1,30 +1,25 @@
 
 # ExcelWebAddinFlask  
 
-## Welcome
+ExcelWebAddinFlask is a sample project showing how to combine the Microsoft Office Add-in platform with a Python Webserver.
 
-![altText](images/black.gif)
+Microsoft Office is used by over One billion users. ["Microsoft's Office Has over One Billion Users". Softpedia. SoftNews. July 10, 2012].
 
+The Office Add-in platform allows you to publish your Add-ins to the Microsoft Store. From the store your addin can then be installed and used by over a billion users!
 
-<img src="https://github.com/rogergrambihler/ExcelWebAddnFlask/blob/master/docs/images/black.gif" width="200">
+The goals of the tutorial is enable you to publish your own Add-in to the Office store along with a webSite users can browse to for help or additional services and information.
 
-ExcelWebAddinFlask is a sample project showing of an Office Excel WebAddin that uses a python flask server.
-The project is a combination of the ExcelWebAddin template and the Python web server template from Visual Studio.
+This tutorial is broken up into Lessons. Feel free to skip and move around based on how famliar you are. Also, if there are lessons or more details for existing lessons please leave comment or pull request.
 
-## Goals 
-
-todo: add some text why someone would want to develop and Office Addin.
-todo: figure out what to do about FabricUI. 
-todo: want a general website for help and contact information. I'm using the Visual studio webserver template. Is there a better general template that is used by python folks?
 
 ## Lessons
 
 What is an Office Add-in  
-Install Prerequisites for webSite  
-Run the WebSite  
-Setup SSL Certificate  
+Install Prerequisites  
+Run the WebSite  (todo: is this a good generic webSite template?)  
+Setup SSL Certificate for localhost  
 The Addin Manifest Manifest  
-Sideloading Addin in Excel  
+Sideloading Addin into Excel Online  
 Addin items in the Excel Ribbon  
 Show a Hello World Task pane in Excel  
 Excel API. Excel.Run  
@@ -41,58 +36,3 @@ WebSite Monitoring
 Go Geo (Load Balancers)  
 Content Delivery Networks (CDNs)  
 Fabric UI  
-
-
-## PreRequisites
-
-Why Flask
-Why JQuery
-todo: Is there an easy way to read markdown?
-
-To use the Project you will need the following installed:  
-Visual Studio Community (Include Python and Office Shared Development)  
-Office 365 Excel
-
-##Install the project
-git clone the project to a local folder
-
-##Trust the Certificate
-Office addins require a trusted SSL so you need to do some extra steps to install the wwwroot\certs\ca.crt as a trusted root authority.  
-
-To trust the cert follow the steps at: https://github.com/OfficeDev/generator-office/blob/HEAD/src/docs/ssl.md 
-but use the cert at wwwwroot\certs\ca.crt instead of the location they use in their directiong.
-
-##Running the sample 
-Launch the ExcelWebAddinFlask.sln solution in Visual Studio  
-Choose "Start Debugging" from the debug menu
-
-The solution will do the following steps:  
-Launches the python webservice (you should see the home page displayed correctly without a cert error) 
-Opens an Excel document with the manifest (you should see in excel a "Show TaskPane button"  
-Click the "Show Taskpane Button". This will open your Office Addin's custom taskpane.
-
-##Changing the Background  
-
-With the taskpane open highlight a cell in the Excel Spreadsheet  
-Click the "Highlight" button in the taskpane  
-The select cell in the Excel Spreadsheet will turn orange  
-
-To learn more about how the Excel Object model works find the code for changing the color and make change the code for your own favorite background.
-
-## FAQ
-
-Where can I learn more about Excel Addins? https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-overview  
-  
-Where is the addin code? The addin code is part of the Flask server. Look at addin.html, addin.js, and addin.cs.
-
-What are all the other server items? These came from the Python flask template which has the home and other pages.
-Its useful to have a home page even if don't need a website to  debug that the website is working properly.
-These could all be removed with the exception of the addin.* pages and routes and your Office addin would still work correctly.
-
-What is FabricUI? Fabric UI provices some standard controls that match the style of the Excel document the addin runs in.
-There is no requirement to use FabricUI in your Office Addin. More information can be found at: https://developer.microsoft.com/en-us/fabric
-
-Flask Server and JQuery. The Flask server template uses JQuery. I left the Jquery in but there is no reason to use JQuery.
-the addin code also has a reference to JQuery but ideally this would be cleaned up to remove the jquery dependency. 
-Note: I'm not sure if flask has a dependency on JQuery.  
-
