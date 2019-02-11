@@ -3,6 +3,7 @@
 todo
 
 Why Flask
+Blueprint https://www.youtube.com/watch?v=Wfx4YBzg16s&index=11&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH
 Why JQuery
 todo: Is there an easy way to read markdown?
 

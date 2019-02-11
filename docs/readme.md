@@ -33,9 +33,16 @@ This tutorial is broken up into Lessons. Feel free to skip and move around based
 WebSite Monitoring  
 Go Geo (Load Balancers)  
 Content Delivery Networks (CDNs)  
-Fabric UI
+Fabric UI  
 Localization  
 
 ## Misc  
 Excel Worksheet Permissions
+
+## Notes  
+Review why have Fonts
+Clean up website to match what would want for store resources  
+Need to figure out if want FabricUI as part of samples (Maybe have a specific fabric UI example)?  
+Make JQuery links consistent and minimize to what need across webSite and samples  
+Clean up static from manifest once used by other Blueprints  
 

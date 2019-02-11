@@ -3,6 +3,7 @@ todo: probably want to rename or break this up better
 
 todo: need to setup SSL certificate local
 todo: consider adding this as just part of the prereqs???
+todo: want  to put some general project layout here but wait until get overall layout done.
 
 ##Trust the Certificate
 Office addins require a trusted SSL so you need to do some extra steps to install the wwwroot\certs\ca.crt as a trusted root authority.  
