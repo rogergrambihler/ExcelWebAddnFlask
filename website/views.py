@@ -13,6 +13,10 @@ app.register_blueprint(manifests.routes)
 from website.showtaskpane import showtaskpane
 app.register_blueprint(showtaskpane.routes)
 
+from website.executefunctions import executefunctions
+app.register_blueprint(executefunctions.routes)
+
+
 @app.route('/')
 @app.route('/home')
 def home():
@@ -23,23 +27,7 @@ def home():
         year=datetime.now().year,
     )
 
-@app.route('/functions.html')
-def functions():
-    """Renders the home page."""
-    return render_template(
-        'functions.html',
-        title='functions page',
-        year=datetime.now().year,
-    )
 
-@app.route('/dialog.html')
-def dialog():
-    """Renders the home page."""
-    return render_template(
-        'dialog.html',
-        title='functions page',
-        year=datetime.now().year,
-    )
 
 @app.route('/contact')
 def contact():
