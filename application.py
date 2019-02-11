@@ -14,4 +14,5 @@ if __name__ == '__main__':
 
     certLocation = "website/certs/"
     # https://localhost:50603
-    app.run(HOST, PORT, debug=True, ssl_context=(certLocation + 'server.crt', certLocation + 'server.key'))
+    # pass in debug=false since debugging with Visual Studio code.
+    app.run(HOST, PORT, debug=False, ssl_context=(certLocation + 'server.crt', certLocation + 'server.key'))

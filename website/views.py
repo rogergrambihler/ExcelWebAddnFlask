@@ -6,6 +6,11 @@ from datetime import datetime
 from flask import render_template, make_response, request
 from website import app
 
+# Blueprints
+from website.manifests import manifests
+
+app.register_blueprint(manifests.routes)
+
 @app.route('/')
 @app.route('/home')
 def home():

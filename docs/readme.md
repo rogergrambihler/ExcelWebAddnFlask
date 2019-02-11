@@ -16,8 +16,8 @@ This tutorial is broken up into Lessons. Feel free to skip and move around based
 
 [What is an Office Add-in](lessons/whatisanofficeaddin.md)  
 [Install Prerequisites](lessons/installprerequisites.md)    
-[Run the WebSite](lessons/runthewebsite.md)  
-[Setup SSL Certificate for localhost](lessons/setupsslcertificateforlocalhost.md)  
+[Make your own Fork of the ExcelWebAddinFlask repo](lessons/forkexcelwebaddinflaskrepo.md)  
+[Run the Website Setup/SSL Certificate for localhost](lessons/runthewebsite.md)  
 [The Addin Manifest](lessons/theaddinmanifest.md)  
 [Sideloading an Addin into Excel Online](lessons/sideloadinganaddintoexcelonline.md)   
 [Show a Hello World Task pane](lessons/showahelloworldtaskpane.md)  
