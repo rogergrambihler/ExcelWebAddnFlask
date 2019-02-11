@@ -1,7 +1,7 @@
 
 from flask import Blueprint, request, render_template, make_response
 
-routes = Blueprint('manifests', 'manifests', url_prefix='/manifests')
+routes = Blueprint('manifests', __name__, url_prefix='/manifests', template_folder='templates')
 
 @routes.route('/manifest.xml', methods=['GET'])
 def manifestXml():
@@ -15,7 +15,7 @@ def manifestXml():
 
     host_url = "https://" + request.host + "/"
     responseXml = render_template(
-        'manifests/manifest.xml',
+        'manifest.xml',
         host_url=host_url
     )
 
