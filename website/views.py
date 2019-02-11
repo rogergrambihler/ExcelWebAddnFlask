@@ -8,8 +8,10 @@ from website import app
 
 # Blueprints
 from website.manifests import manifests
-
 app.register_blueprint(manifests.routes)
+
+from website.showtaskpane import showtaskpane
+app.register_blueprint(showtaskpane.routes)
 
 @app.route('/')
 @app.route('/home')
@@ -17,45 +19,6 @@ def home():
     """Renders the home page."""
     return render_template(
         'index.html',
-        title='Home Page',
-        year=datetime.now().year,
-    )
-
-
-## todo: app route for generating the manifest.xml
-# is there better way to do the approutes vs. all one file?
-@app.route('/manifest.xml')
-def manifestXml():
-
-    # Office Agaves requires the urls to be https so 
-    # replace the host_url information in the manifest
-    # to be the current request's HTTP_HOST with the https 
-    # protocol. 
-    # todo: possible browsed to this page as http:// instead of https://
-    # in which case if using non-standard ports this can be wrong. 
-
-    host_url = "https://" + request.host + "/"
-    responseXml = render_template(
-        'manifests/manifest.xml',
-        host_url=host_url
-    )
-
-    response = make_response(responseXml)
-    response.headers["Cache-Control"] = "must-revalidate"
-    response.headers["Pragma"] = "must-revalidate"
-    response.headers["Content-type"] = "application/xml"
-
-    # Add the Content-Disposition which will tell the browser to download as a file 
-    # instead of showing in the browser
-    response.headers["Content-Disposition"] =  "attachment; filename='manifest.xml'"
-    return response
-
-
-@app.route('/addin.html')
-def addin():
-    """Renders the home page."""
-    return render_template(
-        'addin.html',
         title='Home Page',
         year=datetime.now().year,
     )
@@ -93,13 +56,13 @@ def contact():
 def about():
     """Renders the about page."""
 
-    foo = ""
-    for attr in dir(request):
-        foo += str(attr) + ":" + str(getattr(request, attr))
+  #  foo = ""
+  #  for attr in dir(request):
+   #     foo += str(attr) + ":" + str(getattr(request, attr))
 
     return render_template(
         'about.html',
-        title='About ' + request.host_url + " " + foo ,
+        title='About ', # + request.host_url + " " + foo ,
         year=datetime.now().year,
         message='Your application description page.'
     )

@@ -20,7 +20,7 @@ This tutorial is broken up into Lessons. Feel free to skip and move around based
 [Run the Website Setup/SSL Certificate for localhost](lessons/runthewebsite.md)  
 [The Addin Manifest](lessons/theaddinmanifest.md)  
 [Sideloading an Addin into Excel Online](lessons/sideloadinganaddintoexcelonline.md)   
-[Show a Hello World Task pane](lessons/showahelloworldtaskpane.md)  
+[Show a Hello World Task Pane](lessons/showahelloworldtaskpane.md)  
 [Excel JavaScript API](lessons/exceljavascriptapi.md)  
 [Use the Excel Api in a Task Pane](lessons/usetheexcelapiinataskpane.md)  
 [Functions](lessons/functions.md)  
@@ -45,4 +45,5 @@ Clean up website to match what would want for store resources
 Need to figure out if want FabricUI as part of samples (Maybe have a specific fabric UI example)?  
 Make JQuery links consistent and minimize to what need across webSite and samples  
 Clean up static from manifest once used by other Blueprints  
+determine what want to do with the default and what clients don't support <SourceLocation DefaultValue="{{ host_url }}addin.html" 
 
