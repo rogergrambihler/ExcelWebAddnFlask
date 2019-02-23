@@ -46,4 +46,7 @@ Need to figure out if want FabricUI as part of samples (Maybe have a specific fa
 Make JQuery links consistent and minimize to what need across webSite and samples  
 Clean up static from manifest once used by other Blueprints  
 determine what want to do with the default and what clients don't support <SourceLocation DefaultValue="{{ host_url }}addin.html" 
+Would also be nice to do an Agave with a static dialog/taskpane so it can be on CDN and then make a webService
+call to get the data. Maybe should just do this?
+deteremine best practice for javascript reload when make changes.
 

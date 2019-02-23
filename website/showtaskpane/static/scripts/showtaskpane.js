@@ -54,6 +54,18 @@
     }
 
     function hightlightHighestValue() {
+
+        $.ajax( {
+            type:'Get',
+            url:'https://localhost:50603/api/foo',
+            success:function(data) {
+                showNotification("success", data);
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) { 
+                showNotification("error", "Status: " + textStatus + " " + errorThrown);
+            }   
+            })
+
         // Run a batch operation against the Excel object model
         Excel.run(function (ctx) {
             // Create a proxy object for the selected range and load its properties
