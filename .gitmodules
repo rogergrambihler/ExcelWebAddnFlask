@@ -1,0 +1,3 @@
+[submodule "submodules/livereload"]
+	path = submodules/livereload
+	url = https://github.com/lepture/python-livereload.git
