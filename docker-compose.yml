@@ -1,0 +1,21 @@
+version : '3'
+
+services:
+  python:
+#    image: 'python:3.6'
+    build:
+      context: .
+      dockerfile: "docker/website/dockerfile"
+    ports: 
+      - 50603:50603
+      - 9090:9090
+    volumes:
+      - .:/app
+#    command: sleep infinity
+#    command:  >
+#      sh -c "
+#        cd /app  &&
+#        pip install -r requirements.txt &&
+#        python application.py
+#        "
+

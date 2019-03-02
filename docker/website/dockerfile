@@ -1,0 +1,8 @@
+FROM python:3.4
+
+COPY . /app
+
+WORKDIR /app
+
+RUN sh -c "pip install -r requirements.txt"
+CMD ["python", "application.py"]
