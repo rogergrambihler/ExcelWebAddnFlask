@@ -15,10 +15,10 @@ from os import environ
 import ssl
 from website import app
 from flask_socketio import SocketIO, emit
+from livereload import Server, shell
 
-#from livereload import Server, shell
-
-from submodules.livereload.livereload import Server, shell
+enableLiveReload = True
+#from submodules.livereload.livereload import Server, shell
 
 
 ssl_ctx = None
@@ -28,14 +28,26 @@ ssl_ctx = None
 
 
 # hack socketio location test
-socketio = SocketIO(app, ssl_ctx=ssl_ctx)
+#socketio = SocketIO(app, ssl_ctx=ssl_ctx)
 
 if __name__ == '__main__':
 
     # If launched as main then setup the Flask Server
     HOST = environ.get('SERVER_HOST', 'localhost')
-    HOST = environ.get('SERVER_HOST', '0.0.0.0')
-    PORT = int(environ.get('SERVER_PORT', '50603'))
+ #   HOST = environ.get('SERVER_HOST', '')
+    PORT = int(environ.get('SERVER_PORT', '5000'))
+
+    if (enableLiveReload):
+      app.debug = True
+      liveReloadServer = Server(app.wsgi_app)
+        #  certLocation = "website/certs/"
+
+          # server.watch
+      liveReloadServer.watch('website/')
+      liveReloadServer.watch('website/templates/')
+      liveReloadServer.serve(port=PORT, host=HOST)
+    else:
+      app.run(HOST, PORT, debug=False)
 
  #   socketio.run(app, port=9090)
 
@@ -53,9 +65,9 @@ if __name__ == '__main__':
 
      # https://localhost:50603
     # pass in debug=false since debugging with Visual Studio code.
-    certLocation = "website/certs/"
+#    certLocation = "website/certs/"
 
 #     app.run(HOST, PORT, debug=False, ssl_context=(certLocation + 'server.crt', certLocation + 'server.key'))
-    app.run(HOST, PORT, debug=False)
+#    app.run(HOST, PORT, debug=False)
 
 
