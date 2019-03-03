@@ -1,17 +1,41 @@
 version : '3'
 
+volumes:
+  static_files:
+  pgdata:
+
 services:
+
+  nginx:
+    depends_on:
+      - python
+      - postgres
+#    image: 'python:3.6'
+    build:
+      context: .
+      dockerfile: "docker/nginx/dockerfile"
+    ports: 
+#      - 8080:80
+      - 8080:80
+    volumes:
+      - ./website/static:/static_files
+
   python:
 #    image: 'python:3.6'
     build:
       context: .
       dockerfile: "docker/website/dockerfile"
     ports: 
+      - 5000:5000
       - 50603:50603
       - 9090:9090
     volumes:
       - .:/app
 #    command: sleep infinity
+#    command: >
+#      sh -c "
+#        gunicorn --bind 0.0.0.0:50603 application:app"
+
 #    command:  >
 #      sh -c "
 #        cd /app  &&
@@ -19,3 +43,15 @@ services:
 #        python application.py
 #        "
 
+  postgres:
+    image: 'postgres'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data/pgdata
+  
