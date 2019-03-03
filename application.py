@@ -15,17 +15,17 @@ from os import environ
 import ssl
 from website import app
 from flask_socketio import SocketIO, emit
-from livereload import Server, shell
+#from livereload import Server, shell
 
 enableLiveReload = True
-#from submodules.livereload.livereload import Server, shell
+from submodules.livereload.livereload import Server, shell
 
 
 ssl_ctx = None
 #ssl_ctx = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)
 #ssl_ctx.load_cert_chain(
 #        "C:\\Users\\rogerg.REDMOND\\source\\repos\\ExcelWebAddnFlask\\website\\certs\\server.pem")
-
+# change for docker rebuild
 
 # hack socketio location test
 #socketio = SocketIO(app, ssl_ctx=ssl_ctx)
@@ -34,6 +34,7 @@ if __name__ == '__main__':
 
     # If launched as main then setup the Flask Server
     HOST = environ.get('SERVER_HOST', 'localhost')
+ #   HOST = environ.get('SERVER_HOST', '0.0.0.0')
  #   HOST = environ.get('SERVER_HOST', '')
     PORT = int(environ.get('SERVER_PORT', '5000'))
 
