@@ -25,7 +25,7 @@ ssl_ctx = None
 #ssl_ctx = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)
 #ssl_ctx.load_cert_chain(
 #        "C:\\Users\\rogerg.REDMOND\\source\\repos\\ExcelWebAddnFlask\\website\\certs\\server.pem")
-# change for docker rebuild
+# change for docker rebuil
 
 # hack socketio location test
 #socketio = SocketIO(app, ssl_ctx=ssl_ctx)
