@@ -12,13 +12,19 @@ services:
     build:
       context: .
       dockerfile: "docker/nginx/dockerfile"
+#    Workaround on Linux of want to forward requests to
+#    a machine differen than the one hosting the container uncomment
+#    and set the host.docker.internal ip to the ip of the machine 
+#    request should be forwarded to.
+#    Note: 3/3/2019 - Linux doesn't support host.docker.internal so 
+#      also need to uncomment and put in your host machines ip if 
+#      want to use as a reverse proxy on linux
 #    extra_hosts:
-#        - "hostname:10.0.0.18"
+#        - "host.docker.internal:10.0.0.9"
     ports: 
-#      - 8080:80
       - 8080:80
       - 443:443
-      - 444:444
+      - 444:443
 
 
   python:
@@ -34,9 +40,9 @@ services:
     volumes:
       - .:/app
      # for development launch directly for livereload
-    command: >
-       sh -c "
-        python application.py"
+    #command: >
+    #   sh -c "
+    #    python application.py"
 
 #    command: sleep infinity
 #    command: >
