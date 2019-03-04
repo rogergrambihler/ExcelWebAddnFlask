@@ -1,7 +1,6 @@
 version : '3'
 
 volumes:
-  static_files:
   pgdata:
 
 services:
@@ -13,13 +12,14 @@ services:
     build:
       context: .
       dockerfile: "docker/nginx/dockerfile"
+#    extra_hosts:
+#        - "hostname:10.0.0.18"
     ports: 
 #      - 8080:80
       - 8080:80
       - 443:443
       - 444:444
-    volumes:
-      - ./website/static:/static_files
+
 
   python:
 #    image: 'python:3.6'
