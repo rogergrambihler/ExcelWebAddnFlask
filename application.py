@@ -15,10 +15,10 @@ from os import environ
 import ssl
 from website import app
 from flask_socketio import SocketIO, emit
-from livereload import Server, shell
+# from livereload import Server, shell
 
 enableLiveReload = True
-#from submodules.livereload.livereload import Server, shell
+from submodules.livereload.livereload import Server, shell
 
 
 ssl_ctx = None
