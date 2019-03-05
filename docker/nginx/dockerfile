@@ -9,5 +9,5 @@ COPY ./docker/nginx/django.conf /etc/nginx/conf.d/
 COPY ./website/certs/. /etc/nginx/
 
 # Setup static files
-COPY ./website/static/. /static_files/
+# COPY ./website/static/. /static_files/
 

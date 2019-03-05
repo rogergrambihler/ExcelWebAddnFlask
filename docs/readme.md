@@ -12,12 +12,25 @@ The goals of the tutorial is enable you to publish your own Add-in to the Office
 This tutorial is broken up into Lessons. Feel free to skip and move around based on how famliar you are. Also, if there are lessons or more details for existing lessons please leave comment or pull request.
 
 
+
 ## Lessons
 
-[What is an Office Add-in](lessons/whatisanofficeaddin.md)  
+### WebSite
+
+video to deploy docker to Azure: Dan Taylor - From Zero to Azure with Python, Docker containers, and Visual Studio Code-I1cG1FRjFOQ
+
 [Install Prerequisites](lessons/installprerequisites.md)    
 [Make your own Fork of the ExcelWebAddinFlask repo](lessons/forkexcelwebaddinflaskrepo.md)  
+f5 for local host
+LiveReload
+Have ways of running SSL, nginx in container, SSL in flask web, ngrok.
 [Run the Website Setup/SSL Certificate for localhost](lessons/runthewebsite.md)  
+[deploy your webSite on Azure](lessons/runningyourwebsiteonazure.md)  
+
+
+### Office Addin
+
+[What is an Office Add-in](lessons/whatisanofficeaddin.md)  
 [The Addin Manifest](lessons/theaddinmanifest.md)  
 [Sideloading an Addin into Excel Online](lessons/sideloadinganaddintoexcelonline.md)   
 [Show a Hello World Task Pane](lessons/showahelloworldtaskpane.md)  
@@ -25,13 +38,11 @@ This tutorial is broken up into Lessons. Feel free to skip and move around based
 [Use the Excel Api in a Task Pane](lessons/usetheexcelapiinataskpane.md)  
 [Functions](lessons/functions.md)  
 [Show a Dialog](lessons/showadialog.md)  
-[Running your webSite on Azure](lessons/runningyourwebsiteonazure.md)  
 [Submit your addin to the Office store](lessons/submityouraddintotheofficestore.md)    
 [Fame and Glory](lessons/fameandglory.md)  
 
 ## Bonus Material 
 WebSite Monitoring  
-Go Geo (Load Balancers)  
 Content Delivery Networks (CDNs)  
 Fabric UI  
 Localization  
