@@ -2,11 +2,6 @@
 This script runs the FlaskWebProject1 application using a development server.
 """
 
-# gunicorn
-# gunicorn --worker-class eventlet -w 1 --certfile cert.pem --keyfile key.pem -b 0.0.0.0:5500 app:app
-# gunicorn --worker-class eventlet -w 1 module:app
-# Using nginx as a WebSocket Reverse Proxy
-
 # NGinx -> Gunicorn -> Flask/Django
 # Daphne is a HTTP, HTTP2 and WebSocket protocol server for ASGI and ASGI-HTTP, developed to power Django Channels.
 # What you need is CGI support for lighthttpd.
@@ -15,10 +10,12 @@ from os import environ
 import ssl
 from website import app
 from flask_socketio import SocketIO, emit
-# from livereload import Server, shell
 
-enableLiveReload = True
-from submodules.livereload.livereload import Server, shell
+# todo: livereload works but either need to not do over standard ports 
+# or pickup a livereload fix for when port is on one of the defaults
+enableLiveReload = False
+from livereload import Server, shell
+#from submodules.livereload.livereload import Server, shell
 
 
 ssl_ctx = None

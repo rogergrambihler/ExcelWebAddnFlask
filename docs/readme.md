@@ -22,10 +22,14 @@ video to deploy docker to Azure: Dan Taylor - From Zero to Azure with Python, Do
 [Install Prerequisites](lessons/installprerequisites.md)    
 [Make your own Fork of the ExcelWebAddinFlask repo](lessons/forkexcelwebaddinflaskrepo.md)  
 f5 for local host
-LiveReload
-Have ways of running SSL, nginx in container, SSL in flask web, ngrok.
-ngrok http 5000 <= this will work with live reload changes
 [Run the Website Setup/SSL Certificate for localhost](lessons/runthewebsite.md)  
+
+SSL Options: 
+    Have ways of running SSL, nginx as reverse proxy in container, SSL in flask web, ngrok.
+    ngrok http 5000 <= this will work with live reload changes
+
+LiveReload (Issue withs this so may want ot move further )
+
 [deploy your webSite on Azure](lessons/runningyourwebsiteonazure.md)  
 
 
