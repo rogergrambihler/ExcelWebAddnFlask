@@ -13,6 +13,7 @@ This tutorial is broken up into Lessons. Feel free to skip and move around based
 
 
 
+
 ## Lessons
 
 ### WebSite
@@ -21,6 +22,7 @@ video to deploy docker to Azure: Dan Taylor - From Zero to Azure with Python, Do
 
 [Install Prerequisites](lessons/installprerequisites.md)    
 [Make your own Fork of the ExcelWebAddinFlask repo](lessons/forkexcelwebaddinflaskrepo.md)  
+[Need to talk about setting up virtual env] https://docs.python-guide.org/dev/virtualenvs/, https://docs.python.org/3/library/venv.html, to setup python -m venv env
 f5 for local host
 [Run the Website Setup/SSL Certificate for localhost](lessons/runthewebsite.md)  
 
